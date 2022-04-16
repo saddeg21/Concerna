@@ -14,12 +14,14 @@
 
     </head>
     <body>
-            <header class="header">
+            <header class="header" id="header">
+                <div class="overlay got-fade">
+                </div>
                 <nav class="nav flex flex-jc-sb flex-ai-c">
                 <a href="#" class="header__logo">
                     <img src="images/logo.png">
                 </a>
-                <a id="button-header" href="#" class="header__toggle hide-for-desktop">
+                <a id="button-toggle" href="#" class="header__toggle hide-for-desktop">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -33,9 +35,93 @@
 
                 <a href="#" class="button hide-for-mobile">SKYLAB</a>
             </nav>
+
+            <div class="header__menu got-fade ">
+                <a href="#">Anasayfa</a>
+                <a href="#">Etkinlikler</a>
+                <a href="#">İletişim</a>
+            </div>
             </header>
+            
+            
+            <section class="greeting">
+                <div class="greeting__image">
+                    <img src="images/greeting.svg" alt ="">
+                </div> 
+                <div class="greeting__content">
+                    <h3>Konser Nerede, Ne zaman, Ne Kadar ?</h3>
+                    <p>Concerna ile şehrinizde yapılan ve yapılacak olan tüm konser organizasyonlarına tek noktadan erişebilirsiniz. Bilet satın alabilir ve konser hakkında gerekli bilgilere erişebilirsiniz</p>
+                    <a href="#" class="button">Etkinlikler</a>
+                </div>
+            </section> 
+
+            <section class="services">
+                <div class="services__content container container--pall">
+                    <div class="services__head">
+                <h2>Servisler</h2>
+                <p>İş ortaklarımıza çözüm odaklı, temaya uygun, planlaması özenle hazırlanmış servisler sunmaktayız.</p>
+            </div>
+                <div class="services__grid">
+                    <div class="services__item">
+                        <div class="services__icon"><img src="images/activity@3x.png"></div>
+                        <div class="services__title">Organizasyon</div>
+                        <div class="services__description">Organizasyonlarda çalışmak üzere yetiştirilmiş mobilize ekibimiz, güçlü stakeholderlarımız ile daima senaryoya bağlı organizasyonlar hazırlamaktayız.</div>
+                    </div>
+
+                    <div class="services__item">
+                        <div class="services__icon"><img src="images/gem@3x.png"></div>
+                        <div class="services__title">Mihenk Taşı</div>
+                        <div class="services__description">Concerna, organizasyon sektöründe en bilinen firma ve en güvenilen firma olarak yerini almaktadır. Dünyaca ünlü yıldızların Türkiye organizasyonları ekibimizce aranje edilmektedir.</div>
+                    </div>
+
+                    <div class="services__item">
+                        <div class="services__icon"><img src="images/mobile@3x.png"></div>
+                        <div class="services__title">Hızlı İletişim</div>
+                        <div class="services__description">Diğer rakiplerimizden bizi ayıran en önemli unsur, kullandığımız iletişim kanalları sayesinde yapılan iletişimin kesintisiz olmasıdır. Bu sayede proje kesintisiz ve eksiksiz şekilde launch edilir.</div>
+                    </div>
+
+                    <div class="services__item">
+                        <div class="services__icon"><img src="images/tag@3x.png"></div>
+                        <div class="services__title">Prestij</div>
+                        <div class="services__description">Hiçbir sanatçı marka değerini kaybetmek veya beklediğinin altında bir ilgiyi görmek istemez. Bunun için sosyal mecralar ve reklamlarda yaptığımız icraatler ile etkinliğin başarısını garantileriz.</div>
+                    </div>
+                </div></div>
+            </section>
+   <footer class="footer">
+       <a href="#" class="footer__logo">
+           <img src="images/logo.png"/>
+       </a>
+
+       <div class="footer__socialmedia">
+        <a href="#"><img src="images/icon-facebook.svg"></a>
+        <a href="#"><img src="images/icon-instagram.svg"></a>
+        <a href="#"><img src="images/icon-twitter.svg"></a>
+        <a href="#"><img src="images/icon-youtube.svg"></a>
+       </div>
+
+       <div class="footer__links col1">
+           <a href="#">Biz Kimiz ?</a>
+           <a href="#">İletişim</a>
+           <a href="#">Referanslar</a>
+       </div>
+       <div class="footer__links col2">
+        <a href="#">Kariyer</a>
+        <a href="#">Destek</a>
+        <a href="#">KVKK</a>
+    </div>
+    <div class="footer__button">
+    <a href="#" class="button">SKYLAB</a></div>
+    <div class="footer__copyright">
+        &copy; Concerna. SKYLAB.
+    </div>
    
-        
+
+
+   </footer>
+
+        <script src="js/script.js"></script>
 
     </body>
 </html>
+
+<!--<a href="https://storyset.com/people">People illustrations by Storyset</a>-->
