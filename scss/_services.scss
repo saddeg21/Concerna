@@ -1,0 +1,61 @@
+.services {
+    
+    h2 {
+        font-size: 2.5rem;
+        color: $vwavepembe;
+        font-weight: bold;
+        text-shadow:
+    -1px -1px 0 $gri,
+    1px -1px 0 $gri,
+    -1px 1px 0 $gri,
+    1px 1px 0 $gri,  
+    -2px 0 0 $gri,
+    2px 0 0 $gri,
+    0 2px 0 $gri,
+    0 -2px 0 $gri;
+    }
+    p {
+        font-size: 1.5rem;
+        color: $gri;
+    }
+
+    &__head {
+        @include breakpoint-down(medium) {
+            text-align: center;
+            align-items: center;
+        }
+    }
+    &__grid {
+        @include breakpoint-up(medium) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        padding: 0.9375rem ;
+        @include breakpoint-up(medium) {
+            flex: 0 0 50%;
+        }
+        @include breakpoint-up(large) {
+            flex:1;
+        }
+        @include breakpoint-down(medium) {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__icon {
+        
+
+    }
+
+    &__title {
+
+    }
+
+    &__description {
+
+    }
+}

@@ -1,0 +1,73 @@
+.footer {
+    background-color: $kirmizi;
+    color: white;
+    padding: 2.5rem;
+    text-align: center;
+
+    @include breakpoint-up(large) {
+        display: grid;
+        grid-template-columns: repeat(3,1fr) 2fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:"logo links1 links2 skylab"
+        "socialmedia links1 links2 copyright";
+    }
+
+    a {
+        color: white;
+    }
+    &__logo {
+        margin-bottom: 1.875rem;
+        display: inline-block;
+        @include breakpoint-up(large) {
+            grid-area: logo;
+        }
+    }
+
+    &__socialmedia {
+        margin-bottom: 1.875rem;
+        a {
+            display: inline-block;
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+            @include breakpoint-up(large) {
+                grid-area: socialmedia;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2;
+        &.col1 {
+            @include breakpoint-up(large) {
+                grid-area: links1;
+                justify-self:end;
+            }
+
+        }
+        &.col2 {
+            margin-bottom: 1.875rem;
+            @include breakpoint-up(large) {
+                grid-area: links2;
+                justify-self: end;
+            }
+
+        }
+    }
+
+    &__copyright {
+        @include breakpoint-up(large) {
+            grid-area: copyright;
+        }
+
+    }
+
+    &__button {
+        @include breakpoint-up(large) {
+            grid-area: skylab;
+        }
+    }
+}
